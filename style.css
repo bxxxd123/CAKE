@@ -1,0 +1,370 @@
+.navbar .container{
+    padding: 30px 0;
+}
+
+
+.ms-60 {
+    margin-right: 60px;
+}
+
+.index-banner{
+    /* max-height: 496px; */
+    overflow: hidden;
+    min-height: 496px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* object-fit: cover;
+    object-position: center; */
+}
+
+.banner-img {
+    width: 100%; /* 保持響應式，根據畫面縮放 */
+    height: auto; /* 保持圖片比例 */
+}
+
+.row.g-0 {
+    margin-top: -100px; /* 負的 margin，往上移動 */
+}
+
+.color-box {
+    height: 256px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.color-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 增加陰影效果 */
+}
+
+.bg-y {
+    background-color: #ffe180; 
+}
+.bg-y:hover {
+    background-color: #c98f33; 
+}
+
+.bg-g {
+    background-color: #3F5D45; 
+}
+.bg-g:hover {
+    background-color: #ffe180; 
+}
+
+
+.index_mainarea01 {
+    background-color: #EAF0ED;
+    height: 420px;
+    margin-bottom: 105px;
+    
+}
+
+.mainarea-text {
+    padding: 70px 80px 70px 0px;
+    height: 420px;
+    color: #8DA291; /* 字體顏色 */
+    writing-mode: vertical-rl; /* 垂直書寫模式，從右到左 */
+    text-orientation: upright; /* 文字直立顯示 */
+    font-size: 1rem; /* 調整字體大小 */
+    line-height: 48px; /* 行距設定 */
+    
+}
+
+.imgbox{
+    max-width:460px;
+    max-height: 460px;
+    overflow: hidden;
+    margin-top: -20px;
+}
+
+
+.mainarea-img img{
+    width: 100%; /* 確保填滿 .imgbox */
+    height: 100%;
+    object-fit: cover; /* 保持比例，讓圖片填滿 */
+    object-position: center; /* 圖片顯示原圖中間 */
+    
+}
+
+.mainarea01 img[alt="為什麼選擇了做甜點"]{
+    margin-top: -20px; 
+}
+
+
+.mainarea img[alt="為什麼一定要吃甜點"] {
+    margin-top: -20px; 
+}
+
+
+.index_mainarea02 .row {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 50px 0;
+    margin-bottom: 30px;
+}
+
+/* 調整商品卡的間距 */
+.product_list_area .row {
+    --bs-gutter-x: 24px;  /* 設定水平間距為 24px */
+    margin-bottom: 60px;
+}
+
+/* 商品列表區域基本設定 */
+.product_list {
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/* 商品圖片容器 */
+.img_box {
+    width: 300px;
+    height: 315px;
+    overflow: hidden;
+}
+
+.img_box img.img-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 本日精選標籤 */
+.badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #3F5D45;
+    color: white;
+    padding: 10px;  /* 修改 padding */
+    border-radius: 0;
+    writing-mode: vertical-rl;  /* 加入垂直書寫模式 */
+    letter-spacing: 5px;  /* 加入字元間距 */
+    height: auto;  /* 讓高度自動調整 */
+    font-size: 14px;
+}
+
+/* 加入最愛按鈕 */
+.add_favorite_btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+/* 商品名稱和價格容器 */
+.text_box {
+    width: 300px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #EAF0ED;
+}
+
+/* 商品名稱 */
+.product_name {
+    width: 50%;
+    margin: 0;
+    padding: 15px;
+    font-size: 16px;
+    border-right: 1px solid #EAF0ED;
+    color: #3F5D45;
+}
+
+/* 價格 */
+.price {
+    width: 50%;
+    padding: 15px;
+    color: #3F5D45;
+    font-size: 16px;
+}
+
+/* 加入購物車按鈕 */
+.add_cart_btn {
+    height: 65px;
+    background-color: #EAF0ED;
+    color: #3F5D45;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border: none;
+    font-weight: bold;
+}
+
+.add_cart_btn:hover {
+    background-color: #3F5D45;
+    color: white;
+}
+
+.sub_edm .container{
+    background-color: #3F5D45;
+}
+
+/* 訂閱 EDM 區塊 */
+.sub_edm {
+    background-color: #3F5D45; /* 深綠色背景 */
+    padding: 30px 0; /* 上下內邊距 */
+}
+
+/* 讓 sub_edm 內部內容保持在同一條水平線上 */
+.sub_edm .row {
+    display: flex;
+    justify-content: space-between; /* 左右對齊 */
+    align-items: center; /* 確保 LOGO + 文字 & 訂閱框 在同一水平線 */
+    flex-wrap: wrap; /* 在小螢幕時換行，避免內容擠在一起 */
+}
+
+/* LOGO + 文字的區塊 */
+.sub_edm .col-md-6 {
+    display: flex;
+    align-items: center; /* 讓 LOGO 和文字保持水平對齊 */
+}
+
+/* LOGO */
+.sub_edm img {
+    height: 40px; /* 限制 LOGO 高度 */
+    vertical-align: middle;
+}
+
+/* LOGO 右側的文字 */
+.sub_edm span {
+    color: #EAF0ED; /* 文字白色 */
+    font-size: 24px;
+    margin-left: 10px; /* 控制 LOGO 與文字的間距 */
+    white-space: nowrap; /* 防止文字換行 */
+}
+
+/* 訂閱輸入框區塊 */
+.sub_edm .input-group {
+    max-width: 400px; /* 限制寬度 */
+    width: 100%;
+    margin-left: auto;
+}
+
+/* 移除 Bootstrap 預設圓角 */
+.input-group-text,
+.form-control,
+.btn {
+    border-radius: 0 !important; /* 確保沒有圓角 */
+}
+
+/* 信封圖示（輸入框左側） */
+.input-group-text {
+    background-color: #ffffff;
+    border: none;
+    padding: 12px 15px;
+}
+
+/* 信封圖示的圖片 */
+.input-group-text img {
+    width: 20px;
+    height: 20px;
+}
+
+/* 輸入框 */
+.input-group .form-control {
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+}
+
+/* 送出按鈕 */
+.input-group .btn {
+    background-color: #FFE180; 
+    border: none;
+    padding: 12px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* 按鈕 hover 效果 */
+.input-group .btn:hover {
+    background-color: #A8BDA5; /* 深綠 hover */
+}
+
+/* 按鈕內的箭頭圖示 */
+.input-group .btn img {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+/* Footer 主區塊 */
+.footer {
+    background-color: #EAF0ED;
+    padding: 30px 0;
+}
+
+/* 左側 Logo 區域 */
+.main_area {
+    position: relative;
+    padding-bottom: 80px;  /* 為文字預留空間 */
+}
+
+.main_area img {
+    max-width: 170px;
+}
+
+/* 左側文字區域 */
+.main_area .text_box {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-left: 12px;
+    display: flex;
+    flex-direction: column; /* 讓資訊垂直排列 */
+    align-items: flex-start; /* 讓文字完全靠左對齊 */
+    margin-bottom: 30px;
+}
+
+/* 店家資訊 */
+.main_area .text_box a {
+    color: #3F5D45;
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* 右側標語 */
+.slogan img {
+    width: 59px;
+}
+
+/* 底部社群按鈕和版權宣告 */
+.row.align-items-center {
+    display: flex;
+    justify-content: space-between; /* 左右對齊 */
+    align-items: flex-end;
+    margin-top: 30px; 
+}
+
+/* 社群按鈕 */
+.social-links a {
+    text-decoration: none;
+    margin-right: 8px;
+    
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;  /* 加入固定高度 */
+}
+
+/* 版權宣告文字 */
+.copyright  {
+    color: #3F5D45;
+    margin-bottom: 0;
+}
+
+
+
